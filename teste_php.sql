@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `tarefas` (
   `cod` int(11) NOT NULL,
   `titulo` varchar(150) NOT NULL,
-  `status` int(1) DEFAULT 0 COMMENT '0 = pendente, 1 = concluido',
+  `status` int(1) DEFAULT 0 COMMENT '1 = pendente, 2 = concluido',
   `registro` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
