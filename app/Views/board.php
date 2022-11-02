@@ -26,7 +26,7 @@
 			<div class="register">
 				<form method="post">
 					<input type="text" class="form-control" placeholder="Adicionar Item" name="titulo">
-					<input type="hidden" name="tipo" value="cadastrar">
+					<input type="hidden" name="tipo" value="cadastrar" required>
 					<button type="submit">Adicionar</button>
 				</form>
 			</div>
