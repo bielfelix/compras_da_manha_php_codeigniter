@@ -61,7 +61,7 @@ class Tarefas extends BaseController
             $linhas .= '
 
             <tr>
-                <td class="titulo-table">'.mb_strimwidth($row['titulo'], 0, 30, "...").'</td>
+                <td class="titulo-table">'.mb_strimwidth($row['titulo'], 0, 38, "...").'</td>
                 <td class="info-table">
                     '.$status.'
                     <a href="lista/editar/'.$row['cod'].'" title="Editar | Clique para Editar">
