@@ -281,4 +281,23 @@ td, th{
 .progresso{
     color: #0b589a;
     font-family: 'gotham-extraBold';
+    padding-top: 10px;
+}
+
+.base-superior{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bfcdd9;
+    padding-bottom: 5px;
+}
+
+.excluir_concluidos button{
+    font-family: gotham-extraBold;
+    background-color: #107dde;
+    width: 169px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    border: none !important;
+    font-size: 14px;
 }
