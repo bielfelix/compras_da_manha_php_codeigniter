@@ -35,8 +35,7 @@ class Lista extends BaseController
             
                 case 'excluir':
                     if($tarefasModel->delete($this->request->getPost('cod'))){
-                        $url = str_replace('/index.php', '', site_url());
-                        return redirect()->to($url);
+                        return view('board');
                     }
                     break;
     
