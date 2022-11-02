@@ -92,6 +92,12 @@ class Tarefas extends BaseController
         $html = '<div class="base-superior"><p class="progresso">'.$pt_concluidos.'/'.$pt_totais.' tarefas completas.</p><div class="excluir_concluidos"><form method="post"><input type="hidden" name="tipo" value="excluir_concluidos"><button type="submit">Limpar Concluídos</button></form></div></div>';
 
         $html .= $tabela;
+        
+        if($pt_totais < 1){
+            $html ='
+            <p class="p_nenhum_result">Nenhum Item Cadastrado!</p>
+            ';
+        }
 
         echo $html;
     }
