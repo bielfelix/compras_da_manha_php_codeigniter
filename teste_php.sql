@@ -39,7 +39,7 @@ CREATE TABLE `tarefas` (
 --
 
 INSERT INTO `tarefas` (`cod`, `titulo`, `status`, `registro`) VALUES
-(8, 'arroz', 0, '2022-10-31 21:17:32');
+(8, 'arroz', 1, '2022-10-31 21:17:32');
 
 --
 -- Índices para tabelas despejadas
