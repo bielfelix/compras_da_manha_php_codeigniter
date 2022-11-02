@@ -89,7 +89,7 @@ class Tarefas extends BaseController
         </table>
         ';
 
-        $html = '<p class="progresso">'.$pt_concluidos.'/'.$pt_totais.' tarefas completas.</p>';
+        $html = '<div class="base-superior"><p class="progresso">'.$pt_concluidos.'/'.$pt_totais.' tarefas completas.</p><div class="excluir_concluidos"><form method="post"><input type="hidden" name="tipo" value="excluir_concluidos"><button type="submit">Limpar Concluídos</button></div></div>';
 
         $html .= $tabela;
 
