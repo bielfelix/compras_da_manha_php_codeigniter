@@ -35,7 +35,8 @@ class Lista extends BaseController
             
                 case 'excluir':
                     if($tarefasModel->delete($this->request->getPost('cod'))){
-                        return view('board');
+                        $url = str_replace('/index.php', '', site_url());
+                        return redirect()->to($url);
                     }
                     break;
     
@@ -61,7 +62,9 @@ class Lista extends BaseController
         if($this->request->getMethod() === 'post'){
             $tarefa['titulo'] = $this->request->getPost('titulo');
             if($tarefasModel->update($cod, $tarefa)){
-                return view('board');
+                $urlAux = explode('/lista', site_url());
+                $url = str_replace('/index.php', '', $urlAux[0]);
+                return redirect()->to($url);
             }
         }
 
