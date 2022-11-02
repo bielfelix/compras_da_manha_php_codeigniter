@@ -24,7 +24,7 @@
 			</div>
 			<div class="register">
 				<form method="post">
-					<input type="text" class="form-control" placeholder="Adicionar Item" name="titulo" value="<?php echo $tarefa['titulo'] ?>">
+					<input type="text" class="form-control" placeholder="Adicionar Item" name="titulo" value="<?php echo $tarefa['titulo'] ?>" required>
 					<input type="hidden" name="cod" value="<?php echo $tarefa['cod'] ?>">
 					<button type="submit">Salvar</button>
 				</form>
