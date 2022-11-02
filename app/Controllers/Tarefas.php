@@ -25,6 +25,8 @@ class Tarefas extends BaseController
         '; 
 
         $linhas = '';
+        $pt_concluidos = 0;
+        $pt_totais = 0;
 
         foreach ($query as $row) {
             
@@ -52,6 +54,7 @@ class Tarefas extends BaseController
                         </button>
                     </form>
                     ';
+                    $pt_concluidos++;
                     break;
             }
             
@@ -75,6 +78,8 @@ class Tarefas extends BaseController
             </tr>
 
             ';
+
+            $pt_totais++;
         }
 
         $tabela .= $linhas;
@@ -84,7 +89,11 @@ class Tarefas extends BaseController
         </table>
         ';
 
-        echo $tabela;
+        $html = '<p class="progresso">'.$pt_concluidos.'/'.$pt_totais.' tarefas completas.</p>';
+
+        $html .= $tabela;
+
+        echo $html;
     }
 
 
