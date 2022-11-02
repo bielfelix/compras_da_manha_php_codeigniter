@@ -1,0 +1,279 @@
+
+@font-face {
+	font-family: gotham;
+	src: url(/gotham.otf);
+}
+
+@font-face {
+	font-family: gotham-bold;
+	src: url(/gotham-bold.otf);
+}
+
+@font-face {
+	font-family: gotham-extraBold;
+	src: url(/gotham-extraBold.otf);
+}
+
+@font-face {
+	font-family: gotham-italic;
+	src: url(/gotham-italic.otf);
+}
+
+button:focus{
+	outline: none !important;
+}
+
+input:focus{
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: gray !important;
+}
+
+body{
+	background-color: #0d589a;
+	font-family: gotham;
+	color: white;
+}
+
+.a:hover{
+	color: #0a5ca6;
+	transition: 0.5s;
+} 
+
+.div-info span{
+	font-family: gotham-bold;
+	font-size: 14px;
+}
+
+.icone-info:hover{
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.loadGif{
+	width: 70px;
+    margin-left: calc(50% - 35px);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.div-info{
+	color: #212121;
+}
+
+.info-table a{
+    background-color: #107dde;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white !important;
+    display: inline-block;
+}
+
+.btn-lista{
+    background-color: #107dde;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white !important;
+    display: inline-block;
+    border: none;
+}
+
+.info-table :hover{
+    cursor: pointer;
+}
+
+tr{
+    border-bottom: 1px solid #c0cdd9;
+}
+
+td, th{
+    padding-top: 12px !important;
+}
+
+.info-table{
+    padding-top: 8px !important;
+    width: 165px;
+    display: flex;
+    border: none;
+}
+
+.titulo-table{
+    width: 100%;
+}
+
+.errorInput{
+	border: 2px solid red !important;
+}
+
+.back-box-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    background-color: #0404049c;
+	display: none;
+	top: 0;
+}
+
+.box-modal{
+	width: 90%;
+    background-color: white;
+    z-index: 20;
+    position: absolute;
+    margin-left: 5%;
+    padding: 40px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+	display: none;
+	top: 0 !important;
+	padding-bottom: 15px;
+}
+
+.box-modal-grande{
+	width: 90% !important;
+    margin-left: 5% !important;
+}
+
+.box-modal-pequeno{
+    width: 400px;
+    margin-left: calc(50% - 200px);
+}
+
+.fechar{
+	color: gray;
+    font-size: 20px;
+    margin-left: 100% !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    margin-top: -25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fechar:hover{
+	color: black;
+}
+
+.screen{
+    width: 95%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.head{
+    padding: 20px 0px;
+}
+
+.head h3{
+    color: #0d589a;
+    font-family: 'gotham-bold';
+}
+
+.register{
+    width: 100%;
+}
+
+.register form{
+    width: 100%;
+    display: flex;
+}
+
+.register input{
+    width: 100%;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.register button{
+    font-family: gotham-extraBold;
+    background-color: #107dde;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    border: none !important;
+}
+
+.tarefas{
+    padding: 30px 0px;
+}
+
+.p_nenhum_result{
+    color: #0d589a;
+    font-family: 'gotham-bold';
+    text-align: center;
+}
+
+.concluido{
+    background-color: #1d764c !important;
+    transition: 0.5s;
+}
+
+.concluido:hover{
+    background-color: #004b28 !important;
+    transition: 0.5s;
+}
+
+.pendente{
+    background-color: #dba70f !important;
+    transition: 0.5s;
+}
+
+.pendente:hover{
+    background-color: #bc8c00 !important;
+    transition: 0.5s;
+}
+
+#formulario h4{
+    font-family: 'gotham-bold';
+    color: #0d589a;
+    margin-bottom: 30px;
+}
+
+#formulario span{
+    color: #0d589a;
+}
+
+#formulario button{
+    font-family: gotham-bold;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    background-color: #107dde;
+    margin-top: 20px;
+    margin-left: calc(50% - 70px);
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btn_voltar{
+    font-family: gotham-extraBold;
+    background-color: #107dde;
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: none !important;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+    padding-top: 8px;
+    transition: 0.5s;
+}
+
+.btn_voltar:hover{
+    background-color: #107dde;
+    color: white;
+    transition: 0.5s;
+}
