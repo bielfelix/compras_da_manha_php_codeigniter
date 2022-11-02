@@ -38,6 +38,13 @@ class Lista extends BaseController
                         return view('board');
                     }
                     break;
+    
+                case 'excluir_concluidos':
+                    $tarefasModel->where('status', 2);
+                    if($tarefasModel->delete()){
+                        return view('board');
+                    }
+                    break;
             }
             
 
