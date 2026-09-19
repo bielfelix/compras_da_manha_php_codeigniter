@@ -2,7 +2,7 @@
 
 A historical CodeIgniter 4 version of a small shopping-list application.
 
-I keep this repository public as part of my PHP progression: the same application idea was first implemented with plain PHP and JavaScript and later rebuilt with CodeIgniter to explore framework structure, routing, models, controllers and dependency management.
+I keep this repository public as part of my PHP progression: the same application idea was first implemented with plain PHP and JavaScript and later rebuilt with CodeIgniter to implement the same domain using framework structure, routing, models, controllers and dependency management.
 
 ## Stack
 
@@ -39,7 +39,7 @@ php spark serve
 
 ## Repository status
 
-This is a legacy learning project, not a reference architecture for my current PHP work.
+This is a historical implementation, not a reference architecture for my current PHP work.
 
 The repository originally committed framework/vendor files and a local `.env` file. The current branch now ignores environment files, generated dependencies and local operating-system metadata so the project is safer to clone and maintain.
 
