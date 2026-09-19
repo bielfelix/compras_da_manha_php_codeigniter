@@ -1,0 +1,7 @@
+.env
+.DS_Store
+vendor/
+writable/cache/*
+writable/logs/*
+writable/session/*
+!.gitkeep
